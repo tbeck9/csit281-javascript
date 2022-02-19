@@ -15,8 +15,14 @@
    // Create a variable called currentDate and store the current date using a built in JavaScript function.
 
    let pageView = 0;
-   let pageTitle = 'Page Title';
-   let pageAuthor = 'Page Author';
+   let pageTitle = 'Assigment 2';
+   let pageAuthor = 'Tanner Beck';
+
+   var currentDate = new Date();
+   //var date = currentDate.getFullYear()+'/'+(currentDate.getMonth()+1)+'/'+currentDate.getDate();
+   var date = (currentDate.getMonth()+1)+'/'+currentDate.getDate()+'/'+currentDate.getFullYear();
+
+
 
    </script>
 
@@ -41,6 +47,10 @@
       document.write(pageView);
     }
 
+    function currentDate() {
+      document.write(date);
+    }
+
 
     </script>
 
@@ -48,11 +58,13 @@
 
     <h1 class="page-title"><script>pageTitles();</script></h1>
 
-    <p>by: <script>pageAuthors();</script></p>
+    <p>By: <script>pageAuthors();</script></p>
 
     <!-- Print the current date using the function you created after the page author but before the page view counter. -->
 
-    <small><script>pageViews();</script></small>
+    <p>Current Date: <script>currentDate();</script></p>
+
+    <small>Page Views: <script>pageViews();</script></small>
 
 
 
