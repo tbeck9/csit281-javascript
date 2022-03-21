@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSIT 281 - JavaScript</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+      // Create an array called planets. Add the names of all of the planets in the
+      // array. Then create a loop that goes through the planets array and lists them
+      // on the page. Use a variable for the number of items in the array when looping
+      // through. This way the entire array will be listed if planets like Pluto are
+      // added or removed in the future.
+
+      let planets = ['Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+      let numberOfPlanets = 9;
+      document.write('<h1>Planets In Order From The Sun</h1>')
+      document.write('<ol>');
+      for (let alertLoopNumber = 1; alertLoopNumber < numberOfPlanets; alertLoopNumber++) {
+        document.write('<li>');
+        document.write(planets[alertLoopNumber]);
+        document.write('</li>');
+      }
+      document.write('</ol>');
+
+</script>
+
+</body>
+</html>
