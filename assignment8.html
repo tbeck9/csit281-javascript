@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<form>
+
+
+
+Select your favorite season to change the website theme:
+
+<select id="background" onchange="updateBackgroundColor(this)">
+  <option value="#FFFF00">Spring</option>
+  <option value="#0096FF">Summer</option>
+  <option value="#FFA500">Autumn</option>
+  <option value="#808080">Winter</option>
+
+</select>
+
+</form>
+
+
+
+<script>
+
+// Extend the example from the class lecture to use the dropdown to
+// have the user select their favorite. When the season is selected change
+// the background color, add and image and have it change and text and have
+// it change to match the selected season.
+
+function updateBackgroundColor(selectElem) {
+  var i = selectElem.selectedIndex;
+  if (i < 0) {
+    return;
+  }
+  document.body.style.backgroundColor = selectElem.options[i].value;
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
