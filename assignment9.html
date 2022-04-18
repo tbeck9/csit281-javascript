@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+body {
+  background-color: #FFFFFF;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+
+<form>
+
+
+
+My Favorite Sports Team In:
+
+<select id="background" onchange="sportSelector(this)">
+  <option value="Soccer">Soccer</option>
+  <option value="Hockey">Hockey</option>
+  <option value="Baseball">Baseball</option>
+  <option value="Football">Football</option>
+
+</select>
+
+</form>
+
+
+
+<script>
+
+// Continue to improve the season selector that we create for assignment 8. Feel free to change the topic from seasons to an interest of yours are we are going to include this as part of your portfolio for the final project. I gave some examples in the video but you would update the dropdown selector to give more information. One example would be to change the page to be about your favorite sports teams instead of the seasons. The selector would have options like baseball, football, basketball, etc and when a selector is chosen information about your favorite team for that sport would display. Example: Football is chosen so it would display a heading that says Pittsburgh Steelers, an image of their logo, change the background color to one of their colors and then show a summary paragraph about why you like them.
+
+// Your page should now include the following for each selection:
+
+// Background Color
+// Topic Title
+// Topic Summary
+// Photo
+
+// Make sure to add styles to the page to make the image and text display properly on the page. Design is up to you. Make it look nice and clean.
+
+
+function sportSelector(selectElem) {
+  var i = selectElem.selectedIndex;
+  if (i < 0) {
+    return;
+  }
+
+  var optionValue = selectElem.options[i].value;
+
+  if (optionValue === "Soccer") {
+    document.body.style.backgroundColor = "#FF0000";
+    document.write("My favorite soccer team is Liverpool.");
+  }
+  else if (optionValue === "Hockey") {
+    document.body.style.backgroundColor = "#FFB612";
+    document.write("My favorite hockey team is the Pittsburgh Penguins.");
+  }
+  else if (optionValue === "Baseball") {
+    document.body.style.backgroundColor = "#FFB612";
+    document.write("My favorite baseball team is the Pittsburgh Pirates.");
+  }
+  else if (optionValue === "Football") {
+    document.body.style.backgroundColor = "#FFB612";
+    document.write("My favorite football team is the Pittsburgh Steelers.");
+  }
+  else {
+    document.write("Something went wrong. Please refresh.");
+  }
+
+
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
